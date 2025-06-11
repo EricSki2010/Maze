@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maze</title>
+        <link rel="stylesheet" href="styleMaze.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    </head>
+    <body>
+     <div id="game-container">
+        <div id="game-border"></div>
+        <div id='face'><img id="faceimg" src="images/Face.png"></div>
+        <div id="copyContainer">
+            <textarea id="levelStringOutput"></textarea>
+            <button id="loadLevelBtn" style="
+                position: absolute;
+                top: 14px;
+                width: 120px;
+                height: 60px;
+                right: 15px;
+                z-index: 1000;
+                padding: 8px 12px;
+                background: #007bff;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                ">
+                Load Level
+            </button>
+            <button id="pasteButton" style="
+                position: absolute;
+                bottom: 12px;
+                width: 37%;
+                height: 28px;
+                right: 15px;
+                z-index: 1000;
+                padding: 6px; 
+                background: #007bff;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                ">Paste From Clipboard</button>
+            <button id="copyButton">Copy Level String</button>
+        </div>
+        <button id="saveLevelBtn" style="
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            padding: 8px 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            ">
+            Edit Level
+        </button>
+    </div>
+     
+  
+     <script src="App.js"></script>
+     <script src="setup.js"></script>
+     <script src="GameCode.js"></script>
+    </body>
+    <script>
+
+    </script>
+</html>

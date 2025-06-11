@@ -1,0 +1,112 @@
+#game-container {
+  position: absolute;   
+  width: 3200px;  
+  height: 3200px;
+  background: url('background.png') repeat; 
+  
+}
+body {
+  margin: 0;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+#faceimg {
+  height: 64px;
+  width: 64px;
+}
+#face {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;      
+  left: 50%;     
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  z-index: 10;
+}
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 9;
+}
+.water {
+  position: absolute; /* or relative */
+  top: 0;
+  left: 0;
+  width: 64px; 
+  height: 64px;  
+  overflow: hidden; 
+  z-index: 2;
+}
+*:focus {
+  outline: none;
+}
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+body {
+  user-select: none;
+}
+body::-webkit-scrollbar {
+  display: none; 
+}
+.selector {
+  position: absolute;
+  z-index: 1000;
+  background-color: transparent;
+}
+.circular-timer {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: conic-gradient(#00cc00 0deg, #ccc 0deg);
+  z-index: 9;
+  pointer-events: none;
+  opacity: 0.8;
+}
+#copyContainer {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #222;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  z-index: 9999;
+}
+#copyContainer textarea {
+  width: 300px;
+  height: 60px;
+  resize: none;
+  font-family: monospace;
+  font-size: 14px;
+  padding: 6px;
+  margin-bottom: 6px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  background: #111;
+  color: #fff;
+}
+#copyContainer button {
+  width: 60%;
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+#levelStringOutput {
+  font-family: monospace;
+  resize: none;
+}
