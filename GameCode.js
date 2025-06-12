@@ -49,10 +49,10 @@ function gameLoop() {
     const selectedCrate = pushableTiles.find(tile => tile.x === targetX && tile.y === targetY);
     IfCrateSelected = !!selectedCrate;
     CrateSelected = selectedCrate || {};
-    const imgSrc = IfCrateSelected ? 'images/letter_e.png' : 'images/Selected.png';
+    const imgSrc = IfCrateSelected ? 'Images/letter_e.png' : 'Images/Selected.png';
     const sizeMap = {
-      'images/Selected.png': { width: '8px', height: '8px' },
-      'images/letter_e.png': { width: '32px', height: 'auto' },
+      'Images/Selected.png': { width: '8px', height: '8px' },
+      'Images/letter_e.png': { width: '32px', height: 'auto' },
       default: { width: 'auto', height: 'auto' }
     };
     const sizes = sizeMap[imgSrc] || sizeMap.default;
