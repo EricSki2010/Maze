@@ -88,12 +88,12 @@ function placeBlock(x, y, type, rotate = 0) {
 
   if (imgAmount === 1) {
     block = $(`<div class="${srcClass}" style="transform: rotate(${rotate}deg); width: ${srcWidth}; height: ${srcHeight}; position: absolute;">
-                 <img class="${srcImgClass}" style="width: 64px; height: 64px;" src="images/${srcName}">
+                 <img class="${srcImgClass}" style="width: 64px; height: 64px;" src="Images/${srcName}">
                </div>`);
   } else {
     block = $(`<div class="${srcClass}" style="transform: rotate(${rotate}deg); width: ${srcWidth}; height: ${srcHeight}; position: absolute;">
-                 <img class="${srcImgClass}" style="position: absolute; top: 0px; left: 0px; width: 64px; height: 64px;" src="images/${srcName}">
-                 <img class="${srcImgClass}" style="position: absolute; top: 0px; left: -64px; width: 64px; height: 64px;" src="images/${srcName}">
+                 <img class="${srcImgClass}" style="position: absolute; top: 0px; left: 0px; width: 64px; height: 64px;" src="Images/${srcName}">
+                 <img class="${srcImgClass}" style="position: absolute; top: 0px; left: -64px; width: 64px; height: 64px;" src="Images/${srcName}">
                </div>`);
   }
 
@@ -184,7 +184,7 @@ function respawnCrate(x, y) {
       console.log('Space is free, placing crate');
 
       const block = $(`<div class="push block crate" style="width: 64px; height: 64px; position: absolute;">
-                        <img style="width: 64px; height: 64px;" src="images/crate.png">
+                        <img style="width: 64px; height: 64px;" src="Images/crate.png">
                       </div>`);
       const left = x * step;
       console.log(left);
@@ -455,19 +455,19 @@ $(document).keydown(function(event) {
   if (event.shiftKey) {
     switch (key) {
       case 'a':
-        $('#faceimg').attr('src', 'images/FaceLeft.png');
+        $('#faceimg').attr('src', 'Images/FaceLeft.png');
         direction = 'left';
         return;
       case 'd':
-        $('#faceimg').attr('src', 'images/FaceRight.png');
+        $('#faceimg').attr('src', 'Images/FaceRight.png');
         direction = 'right';
         return;
       case 'w':
-        $('#faceimg').attr('src', 'images/FaceUp.png');
+        $('#faceimg').attr('src', 'Images/FaceUp.png');
         direction = 'up';
         return;
       case 's':
-        $('#faceimg').attr('src', 'images/FaceDown.png');
+        $('#faceimg').attr('src', 'Images/FaceDown.png');
         direction = 'down';
         return;
       default:
@@ -477,22 +477,22 @@ $(document).keydown(function(event) {
 
   switch (key) {
     case 'a':
-      $('#faceimg').attr('src', 'images/FaceLeft.png');
+      $('#faceimg').attr('src', 'Images/FaceLeft.png');
       newX -= 1;
       direction = 'left';
       break;
     case 'd':
-      $('#faceimg').attr('src', 'images/FaceRight.png');
+      $('#faceimg').attr('src', 'Images/FaceRight.png');
       newX += 1;
       direction = 'right';
       break;
     case 'w':
-      $('#faceimg').attr('src', 'images/FaceUp.png');
+      $('#faceimg').attr('src', 'Images/FaceUp.png');
       newY -= 1;
       direction = 'up';
       break;
     case 's':
-      $('#faceimg').attr('src', 'images/FaceDown.png');
+      $('#faceimg').attr('src', 'Images/FaceDown.png');
       newY += 1;
       direction = 'down';
       break;
